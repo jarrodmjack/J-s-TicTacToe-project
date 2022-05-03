@@ -67,12 +67,41 @@ div:hover{
   border: 1px solid black;
   -webkit-box-shadow: 0px 0px 15px 5px #000000; 
   box-shadow: 0px 0px 15px 5px #000000;
+
+}
+
+h2{
+  margin: 0;
 }
 
 
+/* Score count */
 
+.scoreCount{
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
 
+.scoreTitle{
+  font-size: 2rem;
+  margin: 10px;
+}
 
+.oScoreHolder,
+.xScoreHolder{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#xScore,
+#oScore{
+  font-size: 3rem;
+}
 
 
 
@@ -103,10 +132,14 @@ body {
   border: none;
   color: white;
   font-size: 3rem;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 #restart:hover{
     background-color: white;
+    cursor:pointer;
+    color: black;
 }
 
 
@@ -147,7 +180,7 @@ body {
 }
 
 .popcard {
-  background-color: rgb(89, 80, 27);
+  background-color: rgb(132, 98, 156);
   color: white;
   margin: 10% auto;
   padding: 40px;
@@ -166,3 +199,4 @@ body {
     opacity: 1;
   }
 }
+
